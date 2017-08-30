@@ -1,1 +1,2 @@
-select count (distinct name) from attorneys;
+select count (distinct name)
+from attorneys;

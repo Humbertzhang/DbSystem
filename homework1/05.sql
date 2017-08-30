@@ -1,2 +1,6 @@
- select name,count(*) from parties where type like 'Defendant' and name is not '' group by name order by count(*) desc limit 0,3;
-
+select count(*),substr(filing_date,1,3) || '0s' 
+from cases 
+where filing_date is not '' 
+group by (substr(filing_date,1,3) || '0s') 
+order by count(*) desc 
+limit 0,3;

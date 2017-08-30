@@ -1,1 +1,3 @@
-select count (*) from charges where description like '%PHONE%';
+select count (*) 
+from charges 
+where description like '%PHONE%';
